@@ -12,7 +12,7 @@
         "Festive sweater sighting",	
         "Big city person in small town",	
         "Sleigh/carriage ride",	
-        "Blizzard / snowed in",	
+        "Blizzard/snowed in",	
         "Small town business or tradition in trouble",	
         "Magical or unexplained element",
         "Stranded",	
@@ -20,7 +20,8 @@
         "Aerial shot of small town or city",	
         "Interrupted kiss",	
         "Holds mug with two hands",	
-        "Newcomer partakes in tradition flannel",
+        "Newcomer partakes in tradition",
+        "Flannel",
         "Snow on Christmas",	
         "Diner scene",	
         "Accidental physical contact",	
@@ -48,6 +49,12 @@
         "Family heirloom",	
         "Aloof boyfriend",	
         "Hear the songe 'Jingle Bells'", 	
-        "Someone lives in a home they probably can't afford"
+        "Someone lives in a home they probably can't afford",
+        "Slightly nefarious character",
+        "Some element of the Nutcracker",
+        "Incognito royalty/nobility",
+        "Snowball fight",
+        "Shameless product placement",
+        "Unrealistic character arc"
     ]
 }
