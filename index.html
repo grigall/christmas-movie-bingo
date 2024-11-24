@@ -10,13 +10,64 @@
         <script src="bingo.js" async defer></script>
     </head>
     <body>
-
-        <h3 id="header-label">Christmas Movie Bingo</h3>
-        <div id="matrix"></div>
-        <div id="button-wrapper">
-            <button class="button" onclick=generateMatrix()>Generate Bingo Sheet</button>
-            <button class="button" onclick=printSheet()>Print Sheet</button>
+        <!-- Container for moving CSS background -->
+        <div class="container">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:10;"></span>
+            </div>
         </div>
+
+        <!-- Container for game sheet -->
+        <div id="game-container">
+            <h3 id="header-label">Christmas Movie Bingo</h3>
+            <div id="matrix"></div>
+            <div id="button-wrapper">
+                <button class="button" onclick=generateMatrix()>Generate Bingo Sheet</button>
+                <button class="button" onclick=printSheet()>Print Sheet</button>
+            </div>
+        </div>
+
 
         
     </body>

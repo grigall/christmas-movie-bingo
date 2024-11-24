@@ -1,19 +1,28 @@
 * {
     font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
 }
+
 body {
-    background-color: crimson;
+    min-height: 100vh;
+    background: crimson;
+}
+
+#game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10000;
 }
 
 #header-label {
-    background-color: rgb(46, 66, 59); /*Forest Green*/
+    background-color: #2e423bff; /*Forest Green*/
+    color: white;
     padding: 1rem;
-    margin: 0rem;
+    margin: 1rem 0rem;
     text-align: center;
-    border: solid 0.5rem white;
+    border: solid 0.5rem #ffffff44;
     border-radius: 1rem;
     font-weight: bold;
     width: 90vw;
@@ -76,4 +85,48 @@ body {
 
 #button-wrapper {
     background-color: transparent;
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow:hidden;
+    z-index: -10;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #82828244,
+    0 0 50px #fff,
+    0 0 100px #fff;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #fe7691;
+    box-shadow: 0 0 0 10px #6b0c1f44,
+    0 0 50px #fe7691,
+    0 0 100px #fe7691;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(-10vh) scale(1);
+    }
+    100% {
+        transform: translateY(100vh) scale(0);
+    }
 }
